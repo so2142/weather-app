@@ -32,7 +32,7 @@ form {
 
 input {
     width: 30vh;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -86,4 +86,36 @@ button {
 
 .results-condition img {
     vertical-align: middle;
+}
+
+@media screen and (max-width:1099px){
+    .container {
+        padding: 75px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    
+    form {
+        display: inline-grid;
+        margin: 50px 0;
+    }
+    
+    input {
+        margin: 0 auto;
+        margin-right: 0px !important;
+        margin-bottom: 20px;
+    }
+
+    input:focus {
+        background-color: rgba(255, 0, 0, 0);
+        outline: none;
+    }
+    
+    button {
+        margin: 0 auto;
+        width: 15vh;
+        padding: 15px 0 !important;
+        font-size: 18px;
+    }
 }
